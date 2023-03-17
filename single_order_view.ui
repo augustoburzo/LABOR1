@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="single_order_view" named="True">
+    <property name="geometry">1366x600</property>
+    <property name="height">200</property>
+    <property name="iconbitmap">labor.ico</property>
+    <property name="minsize">800|600</property>
+    <property name="title" translatable="yes">Vista lavorazione</property>
+    <property name="width">200</property>
+    <containerlayout manager="grid">
+      <property type="col" id="0" name="weight">1</property>
+      <property type="row" id="1" name="weight">1</property>
+    </containerlayout>
+    <child>
+      <object class="ttk.Labelframe" id="customer_lf" named="True">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Scheda cliente</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">5</property>
+          <property name="row">0</property>
+          <property name="sticky">ew</property>
+        </layout>
+        <containerlayout manager="grid">
+          <property type="col" id="1" name="weight">1</property>
+          <property type="col" id="2" name="pad">10</property>
+          <property type="col" id="3" name="weight">1</property>
+          <property type="row" id="all" name="pad">5</property>
+        </containerlayout>
+        <child>
+          <object class="ttk.Label" id="customer_code_lbl" named="True">
+            <property name="text" translatable="yes">Codice cliente:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">5 0</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="customer_code_entry" named="True">
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="company_lbl" named="True">
+            <property name="text" translatable="yes">Ragione sociale:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">5 0</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="company_entry" named="True">
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="columnspan">3</property>
+              <property name="padx">0 5</property>
+              <property name="row">1</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="customer_name_lbl" named="True">
+            <property name="text" translatable="yes">Nome:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">5 0</property>
+              <property name="row">2</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="customer_name_entry" named="True">
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">2</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="customer_lname_lbl" named="True">
+            <property name="text" translatable="yes">Cognome:</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">2</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="customer_lname_entry" named="True">
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">0 5</property>
+              <property name="row">2</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="customer_city_lbl" named="True">
+            <property name="text" translatable="yes">Città:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">5 0</property>
+              <property name="pady">0 5</property>
+              <property name="row">3</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="customer_city_entry" named="True">
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="pady">0 5</property>
+              <property name="row">3</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="customer_phone_lbl" named="True">
+            <property name="text" translatable="yes">Cellulare:</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="pady">0 5</property>
+              <property name="row">3</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="customer_phone_entry" named="True">
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">0 5</property>
+              <property name="pady">0 5</property>
+              <property name="row">3</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Labelframe" id="product_lf" named="True">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Prodotto</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">0 5</property>
+          <property name="row">1</property>
+          <property name="sticky">nsew</property>
+        </layout>
+        <containerlayout manager="grid">
+          <property type="col" id="5" name="weight">1</property>
+          <property type="row" id="3" name="weight">1</property>
+          <property type="row" id="all" name="pad">5</property>
+        </containerlayout>
+        <child>
+          <object class="ttk.Label" id="product_name_lbl" named="True">
+            <property name="text" translatable="yes">Prodotto e S/N:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">5 0</property>
+              <property name="pady">5 0</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="product_name_entry" named="True">
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="columnspan">3</property>
+              <property name="row">0</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="product_date_in_lbl" named="True">
+            <property name="text" translatable="yes">Data arrivo:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="product_date_in_entry" named="True">
+            <property name="width">24</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">1</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="product_date_out_lbl" named="True">
+            <property name="text" translatable="yes">Data uscita:</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">10 0</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="product_date_out_entry" named="True">
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">1</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="product_diagnosis_lbl" named="True">
+            <property name="text" translatable="yes">Lavor. prevista:</property>
+            <layout manager="grid">
+              <property name="column">4</property>
+              <property name="padx">5 0</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="product_diagnosis_entry" named="True">
+            <layout manager="grid">
+              <property name="column">5</property>
+              <property name="padx">0 5</property>
+              <property name="row">1</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="product_malfunction_lbl" named="True">
+            <property name="text" translatable="yes">Difetto:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Text" id="product_malfunction_txt" named="True">
+            <property name="height">4</property>
+            <property name="width">50</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="columnspan">5</property>
+              <property name="padx">0 5</property>
+              <property name="row">2</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="product_repair_lbl" named="True">
+            <property name="text" translatable="yes">Lavorazioni:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">3</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Treeview" id="repair_tv" named="True">
+            <property name="height">5</property>
+            <property name="selectmode">extended</property>
+            <property name="show">headings</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="columnspan">5</property>
+              <property name="padx">0 5</property>
+              <property name="row">3</property>
+              <property name="sticky">nsew</property>
+            </layout>
+            <child>
+              <object class="ttk.Treeview.Column" id="cod_col" named="True">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">w</property>
+                <property name="minwidth">60</property>
+                <property name="stretch">false</property>
+                <property name="text" translatable="yes">Codice</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">80</property>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Treeview.Column" id="name_col" named="True">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">w</property>
+                <property name="minwidth">200</property>
+                <property name="stretch">true</property>
+                <property name="text" translatable="yes">Lavorazione\Prodotto</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">400</property>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Treeview.Column" id="price_col" named="True">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">w</property>
+                <property name="minwidth">20</property>
+                <property name="stretch">false</property>
+                <property name="text" translatable="yes">Prezzo</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">100</property>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Treeview.Column" id="date_col" named="True">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">w</property>
+                <property name="minwidth">20</property>
+                <property name="stretch">false</property>
+                <property name="text" translatable="yes">Data</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">100</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="product_notes_lbl" named="True">
+            <property name="text" translatable="yes">Note:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">5</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Text" id="product_notes_txt" named="True">
+            <property name="height">3</property>
+            <property name="width">50</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="columnspan">5</property>
+              <property name="padx">0 5</property>
+              <property name="row">5</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="repair_insert_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_repair_insert_press</property>
+            <property name="state">disabled</property>
+            <property name="text" translatable="yes">Inserisci lavorazione...</property>
+            <layout manager="grid">
+              <property name="column">5</property>
+              <property name="columnspan">4</property>
+              <property name="padx">0 5</property>
+              <property name="row">4</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Progressbar" id="status_progressbar" named="True">
+            <property name="cursor">arrow</property>
+            <property name="maximum">4</property>
+            <property name="mode">determinate</property>
+            <property name="orient">horizontal</property>
+            <layout manager="grid">
+              <property name="column">5</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="status_lbl" named="True">
+            <property name="text" translatable="yes">Stato:</property>
+            <layout manager="grid">
+              <property name="column">4</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="work_delete_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_wkdelete_press</property>
+            <property name="state">disabled</property>
+            <property name="style">danger.TButton</property>
+            <property name="text" translatable="yes">Elimina lav.</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="columnspan">2</property>
+              <property name="padx">0 5</property>
+              <property name="row">4</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="newline_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_newline_press</property>
+            <property name="state">disabled</property>
+            <property name="style">success.TButton</property>
+            <property name="text" translatable="yes">Inserisci Prodotto\Riga libera</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="columnspan">2</property>
+              <property name="padx">0 5</property>
+              <property name="row">4</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="toolbar" named="True">
+        <property name="height">100</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">0 5</property>
+          <property name="row">2</property>
+          <property name="sticky">ew</property>
+        </layout>
+        <containerlayout manager="grid">
+          <property type="col" id="0" name="weight">1</property>
+        </containerlayout>
+        <child>
+          <object class="ttk.Button" id="order_update_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_order_update_press</property>
+            <property name="style">warning.TButton</property>
+            <property name="text" translatable="yes">Aggiorna</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="separator1">
+            <property name="orient">vertical</property>
+            <property name="style">info.Vertical.TSeparator</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+              <property name="sticky">ns</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="in_progress_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_inprogress_press</property>
+            <property name="text" translatable="yes">In lavorazione</property>
+            <layout manager="grid">
+              <property name="column">4</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="done_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_done_press</property>
+            <property name="text" translatable="yes">Lavorato</property>
+            <layout manager="grid">
+              <property name="column">5</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="delivered_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_delivered_press</property>
+            <property name="text" translatable="yes">Consegnato</property>
+            <layout manager="grid">
+              <property name="column">6</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="separator2">
+            <property name="orient">vertical</property>
+            <property name="style">info.Vertical.TSeparator</property>
+            <layout manager="grid">
+              <property name="column">7</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+              <property name="sticky">ns</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="export_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_export_press</property>
+            <property name="text" translatable="yes">Esporta...</property>
+            <layout manager="grid">
+              <property name="column">8</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="side_frame" named="True">
+        <property name="height">200</property>
+        <property name="width">0</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="pady">5</property>
+          <property name="row">0</property>
+          <property name="rowspan">3</property>
+          <property name="sticky">ns</property>
+        </layout>
+        <containerlayout manager="grid">
+          <property name="propagate">False</property>
+          <property type="col" id="0" name="weight">1</property>
+          <property type="col" id="1" name="weight">1</property>
+          <property type="row" id="2" name="weight">1</property>
+        </containerlayout>
+        <child>
+          <object class="ttk.Label" id="line_name_lbl" named="True">
+            <property name="text" translatable="yes">Descrizione</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="padx">10</property>
+              <property name="row">5</property>
+              <property name="sticky">sw</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="product_desc_entry" named="True">
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="padx">10</property>
+              <property name="pady">0 10</property>
+              <property name="row">6</property>
+              <property name="sticky">new</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Treeview" id="product_tv" named="True">
+            <property name="selectmode">extended</property>
+            <property name="show">headings</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="padx">10</property>
+              <property name="pady">10</property>
+              <property name="row">2</property>
+              <property name="sticky">nsew</property>
+            </layout>
+            <child>
+              <object class="ttk.Treeview.Column" id="prod_cod_col" named="True">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">w</property>
+                <property name="minwidth">60</property>
+                <property name="stretch">false</property>
+                <property name="text" translatable="yes">Codice</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">60</property>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Treeview.Column" id="prd_name_col" named="True">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">w</property>
+                <property name="minwidth">20</property>
+                <property name="stretch">true</property>
+                <property name="text" translatable="yes">Nome prodotto</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">200</property>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Treeview.Column" id="prd_price_col" named="True">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">w</property>
+                <property name="minwidth">60</property>
+                <property name="stretch">false</property>
+                <property name="text" translatable="yes">Prezzo</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">80</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="product_search_lbl" named="True">
+            <property name="text" translatable="yes">Ricerca prodotto</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="padx">10</property>
+              <property name="pady">10 0</property>
+              <property name="row">0</property>
+              <property name="sticky">sw</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="query_entry" named="True">
+            <property name="textvariable">string:productvar</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="padx">10</property>
+              <property name="row">1</property>
+              <property name="sticky">new</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="price_lbl" named="True">
+            <property name="text" translatable="yes">Prezzo</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="padx">10</property>
+              <property name="row">7</property>
+              <property name="sticky">sw</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="price_entry" named="True">
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="padx">10</property>
+              <property name="pady">0 10</property>
+              <property name="row">8</property>
+              <property name="sticky">nw</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="prd_insert_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_insert_press</property>
+            <property name="text" translatable="yes">Inserisci</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="padx">3 10</property>
+              <property name="row">9</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="undo_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_undo_press</property>
+            <property name="text" translatable="yes">Annulla</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">10 2</property>
+              <property name="row">9</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="product_code_entry" named="True">
+            <property name="state">readonly</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="padx">10</property>
+              <property name="pady">0 10</property>
+              <property name="row">4</property>
+              <property name="sticky">nw</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="prd_code_lbl" named="True">
+            <property name="text" translatable="yes">Codice prodotto</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">10</property>
+              <property name="row">3</property>
+              <property name="sticky">sw</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

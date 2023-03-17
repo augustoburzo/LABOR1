@@ -1,0 +1,209 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/labor.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "Labor1"
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "key",
+   "value": "mtsa6156"
+  },
+  {
+   "optionDest": "splash",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/splash.jpg"
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "version_file",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/metadata.yml"
+  },
+  {
+   "optionDest": "embed_manifest",
+   "value": true
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/company_config.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/credits.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/customer_pick.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/customer_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/document_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/main_window.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/new_document.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/order_insert_window.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/order_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/preferences_window.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/product_insert.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/single_order_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/single_product_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/supplier_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/warehouse_management_window.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/work_pick.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/work_report.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/worker_pick.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/cat.dat;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/tax.dat;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/wk.dat;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/workers.dat;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/splash.jpg;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/icon.ico;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/labor.ico;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/backup;backup/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/.images;.images/"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "\"pygubu\""
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/PycharmProjects/LABOR1/assets/LABOR1_small.png;."
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}

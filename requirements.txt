@@ -1,0 +1,7 @@
+future==0.18.3
+pygubu~=0.29
+ttkbootstrap~=1.10.1
+setuptools==67.3.2
+fpdf~=1.7.2
+pypiwin32>=223
+pywin32>=305
