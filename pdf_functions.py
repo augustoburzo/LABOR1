@@ -12,7 +12,7 @@ import datetime
 import os
 
 from ttkbootstrap.toast import ToastNotification
-from PyQt5 import QtPrintSupport
+
 
 
 class PDF(FPDF):
