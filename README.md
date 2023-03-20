@@ -1,7 +1,6 @@
 ![Logo](.images/LABOR1_small.png)
 # Labor 1
 ## Il gestionale semplice fatto proprio per te!
-![Logo](.images/mockup.png)
 ### Introduzione
 Labor1 è un software gestionale completo progettato per semplificare la gestione dei cen
 tri assistenza tecnica. 
