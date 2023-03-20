@@ -10,9 +10,9 @@ tri assistenza tecnica.
 Il software è stato progettato per aiutar ti a migliorare l'efficienza e la produttività del tuo centro,
 automatizzando i processi di gestione con un interfaccia pratica, fresca e intuitiva
 Con Labor1, i centri assistenza possono facilmente gestire le richieste di assistenza e tracciare lo stato degli
-interventi. 
+interventi.
 
-Il software dispone di una vasta gamma di funzionalità, tra cui:
+**Il software dispone di una vasta gamma di funzionalità, tra cui:**
 - Gestione delle richieste di assistenza: Labor1 consente ai centri assistenza di ges tire le richieste di
 assistenza in modo efficiente, dalla registrazione delle richieste di assistenza alla pianificazione degli
 interventi e alla gestione del personale assegnato alle attività.
