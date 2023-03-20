@@ -1,22 +1,5 @@
 #!/usr/bin/python3
-########################################################################################################################
-# Augusto Burzo - Labor1                                                                                               #
-# Software gestionale ideato per centri riparazione e vendita di ricambi. Il software include (includerà) funzioni per #
-# l'inserimento a sistema di Clienti, Fornitori, Documenti di acquisto e di vendita, Pratiche di assistenza.           #
-#                                                                                                                      #
-# Il progetto si pone come traguardo fondamentale la semplicità d'uso, l'aspetto gradevole e l'affidabilità, si è      #
-# puntato di proposito sulla semplicità di codice e interfaccia. Si è scelto anche d'indicare per quasi ogni tasto     #
-# del programma la sua funzione.                                                                                       #
-########################################################################################################################
-
-__author__ = "Augusto Burzo"
-__copyright__ = "Copyright 2023 - Augusto Burzo"
-__credits__ = ["Augusto Burzo"]
-__license__ = "Proprietary"
-__version__ = "1.2.0"
-__maintainer__ = "Augusto Burzo"
-__email__ = "info@augustoburzo.com"
-__status__ = "Beta"
+# Labor1 - Augusto Burzo
 
 from configparser import ConfigParser
 
@@ -29,6 +12,7 @@ import datetime
 import os
 
 from ttkbootstrap.toast import ToastNotification
+from PyQt5 import QtPrintSupport
 
 
 class PDF(FPDF):

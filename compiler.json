@@ -19,7 +19,7 @@
   },
   {
    "optionDest": "icon_file",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/labor.ico"
+   "value": "C:/Users/burzo/source/repos/LABOR1/labor.ico"
   },
   {
    "optionDest": "name",
@@ -39,7 +39,7 @@
   },
   {
    "optionDest": "splash",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/splash.jpg"
+   "value": "C:/Users/burzo/source/repos/LABOR1/splash.jpg"
   },
   {
    "optionDest": "strip",
@@ -55,7 +55,7 @@
   },
   {
    "optionDest": "version_file",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/metadata.yml"
+   "value": "C:/Users/burzo/source/repos/LABOR1/file_version_info.txt"
   },
   {
    "optionDest": "embed_manifest",
@@ -86,120 +86,100 @@
    "value": false
   },
   {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/company_config.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/credits.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/customer_pick.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/customer_view.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/document_view.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/main_window.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/new_document.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/order_insert_window.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/order_view.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/preferences_window.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/product_insert.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/single_order_view.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/single_product_view.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/supplier_view.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/warehouse_management_window.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/work_pick.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/work_report.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/worker_pick.ui;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/cat.dat;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/tax.dat;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/wk.dat;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/workers.dat;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/splash.jpg;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/icon.ico;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/labor.ico;."
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/backup;backup/"
-  },
-  {
-   "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/.images;.images/"
-  },
-  {
    "optionDest": "collect_all",
    "value": "\"pygubu\""
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/burzo/PycharmProjects/LABOR1/assets/LABOR1_small.png;."
+   "value": "C:/Users/burzo/source/repos/LABOR1/.images;.images/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/worker_pick.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/work_report.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/work_pick.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/warehouse_management_window.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/supplier_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/single_product_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/single_order_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/product_insert.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/preferences_window.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/order_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/order_insert_window.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/new_document.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/main_window.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/document_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/customer_view.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/customer_pick.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/credits.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/company_config.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/agenda.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/splash.jpg;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/labor.ico;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/burzo/source/repos/LABOR1/icon.ico;."
   }
  ],
  "nonPyinstallerOptions": {

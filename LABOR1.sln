@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LABOR1", "LABOR1.pyproj", "{13BA2579-7B24-44AF-84A5-ABE67FDBBFE2}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Labor1 Installer", "..\Labor1 Installer\Labor1 Installer.vdproj", "{9569BEB5-AAB9-4079-B4FB-43B416F27564}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{13BA2579-7B24-44AF-84A5-ABE67FDBBFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13BA2579-7B24-44AF-84A5-ABE67FDBBFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9569BEB5-AAB9-4079-B4FB-43B416F27564}.Debug|Any CPU.ActiveCfg = Debug
+		{9569BEB5-AAB9-4079-B4FB-43B416F27564}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

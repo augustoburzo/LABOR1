@@ -1,22 +1,5 @@
 #!/usr/bin/python3
-########################################################################################################################
-# Augusto Burzo - Labor1                                                                                               #
-# Software gestionale ideato per centri riparazione e vendita di ricambi. Il software include (includerà) funzioni per #
-# l'inserimento a sistema di Clienti, Fornitori, Documenti di acquisto e di vendita, Pratiche di assistenza.           #
-#                                                                                                                      #
-# Il progetto si pone come traguardo fondamentale la semplicità d'uso, l'aspetto gradevole e l'affidabilità, si è      #
-# puntato di proposito sulla semplicità di codice e interfaccia. Si è scelto anche d'indicare per quasi ogni tasto     #
-# del programma la sua funzione.                                                                                       #
-########################################################################################################################
-
-__author__ = "Augusto Burzo"
-__copyright__ = "Copyright 2023 - Augusto Burzo"
-__credits__ = ["Augusto Burzo"]
-__license__ = "Proprietary"
-__version__ = "1.2.0"
-__maintainer__ = "Augusto Burzo"
-__email__ = "info@augustoburzo.com"
-__status__ = "Beta"
+# Labor1 - Augusto Burzo
 
 import datetime
 import os
@@ -151,6 +134,7 @@ class MainWindow:
         self.waiting_orders = DataRetrieve().waiting_orders()
         self.in_progress_orders = DataRetrieve().in_progress_orders()
         self.done_orders = DataRetrieve().done_orders()
+        self.products = DataRetrieve().warehouse_status()
 
         self.warehouse_lf = builder.get_object("warehouse_lf")
         self.overview_lf = builder.get_object("overview_lf")
@@ -158,7 +142,6 @@ class MainWindow:
         self.overview_notebook = builder.get_object("overview_notebook")
         self.warehouse_notebook = builder.get_object("warehouse_notebook")
 
-        self.on_load()
         self.auto_update_daemon()
 
     def run(self):
@@ -244,12 +227,15 @@ class MainWindow:
             self.mainwindow.destroy()
 
     def update_lookup(self):
+        # Carica i dati all'apertura del programma
+        self.on_load()
         # Funzione di ricerca aggiornamenti lavorazioni in loop
         while 1:
             time.sleep(1)
             waiting_orders = DataRetrieve().waiting_orders()
             in_progress_orders = DataRetrieve().in_progress_orders()
             done_orders = DataRetrieve().done_orders()
+            products = DataRetrieve().warehouse_status()
 
             if waiting_orders != self.waiting_orders:
                 self.waiting_orders = waiting_orders
@@ -261,6 +247,10 @@ class MainWindow:
                 time.sleep(1)
             elif done_orders != self.done_orders:
                 self.done_orders = done_orders
+                self.on_load()
+                time.sleep(1)
+            elif products != self.products:
+                self.products = products
                 self.on_load()
                 time.sleep(1)
             else:

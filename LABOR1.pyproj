@@ -110,7 +110,6 @@
     <Content Include="env\Lib\site-packages\win32\license.txt" />
     <Content Include="env\Lib\site-packages\win32\test\win32rcparser\python.bmp" />
     <Content Include="env\Lib\site-packages\win32\test\win32rcparser\python.ico" />
-    <Content Include="file_version_info.txt" />
     <Content Include="icon.ico" />
     <Content Include="labor.ico" />
     <Content Include="Mockup\Mockup0.png" />
