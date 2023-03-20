@@ -6,8 +6,7 @@ import sqlite3
 
 import pygubu
 import ttkbootstrap as ttk
-import ttkbootstrap.dialogs
-from ttkbootstrap import constants
+from ttkbootstrap import Style
 from ttkbootstrap.dialogs.dialogs import DatePickerDialog, Messagebox
 from ttkbootstrap.toast import ToastNotification
 
@@ -27,6 +26,9 @@ class Agenda:
         # Main widget
         self.mainwindow = builder.get_object("main_window", master)
         builder.connect_callbacks(self)
+
+        Style('labor')
+
         # Entries
         self.event_entry = builder.get_object("event_entry")
         self.descr_text = builder.get_object("descr_text")
