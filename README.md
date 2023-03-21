@@ -2,12 +2,11 @@
 # Labor 1
 ## Il gestionale semplice fatto proprio per te!
 ### Introduzione
-Labor1 è un software gestionale completo progettato per semplificare la gestione dei cen
-tri assistenza tecnica.
+Labor1 è un software gestionale completo progettato per semplificare la gestione dei centri assistenza tecnica.
 
 ![](.images/mockup.png)
 
-Il software è stato progettato per aiutar ti a migliorare l'efficienza e la produttività del tuo centro,
+Il software è stato progettato per aiutarti a migliorare l'efficienza e la produttività del tuo centro,
 automatizzando i processi di gestione con un interfaccia pratica, fresca e intuitiva
 Con Labor1, i centri assistenza possono facilmente gestire le richieste di assistenza e tracciare lo stato degli
 interventi.

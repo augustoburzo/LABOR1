@@ -14,6 +14,7 @@ from zipfile import ZipFile
 
 from ttkbootstrap.toast import ToastNotification
 
+from agenda import Agenda
 from company_config import CompanyConfig
 from credits import Credits
 from customer_view import CustomerView
@@ -499,6 +500,9 @@ class MainWindow:
 
     def credits_win(self):
         Credits(master=self.mainwindow).mainwindow.grab_set()
+
+    def agenda_win(self):
+        Agenda(master=self.mainwindow).mainwindow.grab_set()
 
 
 if __name__ == "__main__":
