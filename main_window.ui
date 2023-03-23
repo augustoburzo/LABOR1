@@ -190,6 +190,9 @@
           <property name="row">0</property>
           <property name="sticky">ew</property>
         </layout>
+        <containerlayout manager="grid">
+          <property type="col" id="13" name="weight">1</property>
+        </containerlayout>
         <child>
           <object class="ttk.Button" id="customers_list_btn">
             <property name="command" type="command" cbtype="simple">on_customers_list_press</property>
@@ -221,6 +224,20 @@
           </object>
         </child>
         <child>
+          <object class="ttk.Button" id="btn_orders">
+            <property name="command" type="command" cbtype="simple">on_orders_view_press</property>
+            <property name="compound">top</property>
+            <property name="image">tool-box.png</property>
+            <property name="text" translatable="yes">Lavorazioni</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
           <object class="ttk.Separator" id="separator1">
             <property name="orient">vertical</property>
             <layout manager="grid">
@@ -232,16 +249,15 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Button" id="btn_orders">
-            <property name="command" type="command" cbtype="simple">on_orders_view_press</property>
+          <object class="ttk.Button" id="new_prev_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_new_prev_press</property>
             <property name="compound">top</property>
-            <property name="image">tool-box.png</property>
-            <property name="text" translatable="yes">Lavorazioni</property>
-            <property name="width">10</property>
+            <property name="image">search.png</property>
+            <property name="text" translatable="yes">Preventivo</property>
             <layout manager="grid">
-              <property name="column">3</property>
+              <property name="column">5</property>
+              <property name="padx">0 5</property>
               <property name="row">0</property>
-              <property name="sticky">w</property>
             </layout>
           </object>
         </child>
@@ -271,51 +287,15 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Separator" id="separator6">
-            <property name="orient">vertical</property>
-            <property name="style">info.Vertical.TSeparator</property>
-            <layout manager="grid">
-              <property name="column">9</property>
-              <property name="padx">0 5</property>
-              <property name="row">0</property>
-              <property name="sticky">ns</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Button" id="settings_btn" named="True">
-            <property name="command" type="command" cbtype="simple">on_settings_press</property>
+          <object class="ttk.Button" id="document_list_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_documents_press</property>
             <property name="compound">top</property>
-            <property name="image">settings.png</property>
-            <property name="text" translatable="yes">Impostazioni</property>
+            <property name="image">documents.png</property>
+            <property name="text" translatable="yes">Lista docum.</property>
             <layout manager="grid">
-              <property name="column">12</property>
-              <property name="row">0</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Button" id="new_prev_btn" named="True">
-            <property name="command" type="command" cbtype="simple">on_new_prev_press</property>
-            <property name="compound">top</property>
-            <property name="image">search.png</property>
-            <property name="text" translatable="yes">Preventivo</property>
-            <layout manager="grid">
-              <property name="column">5</property>
+              <property name="column">8</property>
               <property name="padx">0 5</property>
               <property name="row">0</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Separator" id="separator7">
-            <property name="orient">vertical</property>
-            <property name="style">info.Vertical.TSeparator</property>
-            <layout manager="grid">
-              <property name="column">11</property>
-              <property name="padx">0 5</property>
-              <property name="row">0</property>
-              <property name="sticky">ns</property>
             </layout>
           </object>
         </child>
@@ -333,13 +313,49 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Button" id="document_list_btn" named="True">
-            <property name="command" type="command" cbtype="simple">on_documents_press</property>
+          <object class="ttk.Button" id="settings_btn" named="True">
+            <property name="command" type="command" cbtype="simple">on_settings_press</property>
             <property name="compound">top</property>
-            <property name="image">documents.png</property>
-            <property name="text" translatable="yes">Lista docum.</property>
+            <property name="image">settings.png</property>
+            <property name="text" translatable="yes">Impostazioni</property>
             <layout manager="grid">
-              <property name="column">8</property>
+              <property name="column">12</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="separator6">
+            <property name="orient">vertical</property>
+            <property name="style">info.Vertical.TSeparator</property>
+            <layout manager="grid">
+              <property name="column">9</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+              <property name="sticky">ns</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="separator7">
+            <property name="orient">vertical</property>
+            <property name="style">info.Vertical.TSeparator</property>
+            <layout manager="grid">
+              <property name="column">11</property>
+              <property name="padx">0 5</property>
+              <property name="row">0</property>
+              <property name="sticky">ns</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="agenda_btn" named="True">
+            <property name="command" type="command" cbtype="simple">agenda_win</property>
+            <property name="compound">top</property>
+            <property name="image">agenda.png</property>
+            <property name="text" translatable="yes">Agenda</property>
+            <layout manager="grid">
+              <property name="column">14</property>
               <property name="padx">0 5</property>
               <property name="row">0</property>
             </layout>
