@@ -269,6 +269,12 @@
                 <property name="label" translatable="yes">Mostra attività completate</property>
               </object>
             </child>
+            <child>
+              <object class="tk.Menuitem.Command" id="export_command" named="True">
+                <property name="command" type="command" cbtype="simple">on_export_press</property>
+                <property name="label" translatable="yes">Esporta agenda</property>
+              </object>
+            </child>
           </object>
         </child>
       </object>

@@ -40,6 +40,7 @@ from supplier_view import SupplierView
 from warehouse_management_window import WarehouseManagementWindow
 from new_document import NewDocument
 from work_report import WorkReport
+from xl_functions import XLSaver
 
 if getattr(sys, 'frozen', False):
     import pyi_splash
@@ -305,8 +306,10 @@ class MainWindow:
         # Esporta file *.pdf lista clienti
         data = DataRetrieve()
         customers = data.all_customers()
-        pdf = Prints()
-        pdf.customers_list(customers)
+        '''pdf = Prints()
+        pdf.customers_list(customers)'''
+        excel = XLSaver()
+        excel.customers_list(customers)
         self.mainwindow.focus_set()
 
     def on_company_config_press(self):
@@ -314,11 +317,13 @@ class MainWindow:
         CompanyConfig(self.mainwindow).mainwindow.grab_set()
 
     def on_suppliers_print_press(self):
-        # Esporta file *.pdf lista fornitori
+        # Esporta file *.xlsx lista fornitori
         data = DataRetrieve()
         suppliers = data.all_suppliers()
-        pdf = Prints()
-        pdf.suppliers_list(suppliers)
+        '''pdf = Prints()
+        pdf.suppliers_list(suppliers)'''
+        excel = XLSaver()
+        excel.suppliers_list(suppliers)
         self.mainwindow.focus_set()
 
     def on_orders_view_press(self):

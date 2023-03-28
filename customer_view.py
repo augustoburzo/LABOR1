@@ -13,6 +13,7 @@ import pygubu
 from db_functions import DataRetrieve, DataWrite, DataDelete
 from pdf_functions import Prints
 from single_order_view import SingleOrderView
+from xl_functions import XLSaver
 
 PROJECT_PATH = pathlib.Path(__file__).parent
 PROJECT_UI = PROJECT_PATH / "customer_view.ui"
@@ -339,6 +340,22 @@ class CustomerView:
         self.update_btn.configure(state="disabled")
         self.save_btn.configure(state="normal")
         self.export_btn.configure(state="disabled")
+
+    def export_single_cust(self):
+        self.on_export_press()
+
+    def export_cust_list(self):
+        # Esporta file *.xlsx lista fornitori
+        data = DataRetrieve()
+        suppliers = data.all_suppliers()
+        '''pdf = Prints()
+        pdf.suppliers_list(suppliers)'''
+        excel = XLSaver()
+        excel.suppliers_list(suppliers)
+        self.mainwindow.focus_set()
+
+    def on_close(self):
+        self.mainwindow.destroy()
 
 
 if __name__ == "__main__":

@@ -726,5 +726,41 @@
         </child>
       </object>
     </child>
+    <child>
+      <object class="pygubu.builder.widgets.toplevelmenu" id="toplevelmenu1">
+        <child>
+          <object class="tk.Menu" id="main_menu" named="True">
+            <property name="tearoff">false</property>
+            <child>
+              <object class="tk.Menuitem.Submenu" id="file_menu" named="True">
+                <property name="label" translatable="yes">File</property>
+                <property name="tearoff">false</property>
+                <child>
+                  <object class="tk.Menuitem.Command" id="export_single" named="True">
+                    <property name="command" type="command" cbtype="simple">export_single_cust</property>
+                    <property name="label" translatable="yes">Esporta anagrafica</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Menuitem.Command" id="export_list" named="True">
+                    <property name="command" type="command" cbtype="simple">export_cust_list</property>
+                    <property name="label" translatable="yes">Esporta lista clienti</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Menuitem.Separator" id="separator2" />
+                </child>
+                <child>
+                  <object class="tk.Menuitem.Command" id="command3">
+                    <property name="command" type="command" cbtype="simple">on_close</property>
+                    <property name="label" translatable="yes">Chiudi</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
   </object>
 </interface>

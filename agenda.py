@@ -10,6 +10,8 @@ from ttkbootstrap import Style
 from ttkbootstrap.dialogs.dialogs import DatePickerDialog, Messagebox
 from ttkbootstrap.toast import ToastNotification
 
+from xl_functions import XLSaver
+
 PROJECT_PATH = pathlib.Path(__file__).parent
 PROJECT_UI = PROJECT_PATH / "agenda.ui"
 
@@ -230,6 +232,13 @@ class Agenda:
             self.date_entry.insert(0, event[1])
             self.descr_text.insert(1.0, event[3][:-1])
             self.contact_entry.insert(0, event[4])
+
+    def on_export_press(self):
+        self.cur.execute("SELECT * FROM agenda WHERE status = 0 ORDER BY date ASC")
+        events = self.cur.fetchall()
+        excel = XLSaver()
+        excel.agenda(events)
+        self.mainwindow.focus_set()
 
 
 if __name__ == "__main__":
