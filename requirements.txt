@@ -1,7 +1,6 @@
-future==0.18.3
-pygubu~=0.29
+future~=0.18.3
+pygubu~=0.35.6
 ttkbootstrap~=1.10.1
-setuptools==67.3.2
+setuptools~=70.0.0
 fpdf~=1.7.2
-pypiwin32>=223
-pywin32>=305
+openpyxl~=3.1.5

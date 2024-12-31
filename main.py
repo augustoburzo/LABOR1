@@ -64,9 +64,9 @@ class MainWindow:
         self.mainwindow.title(f"Labor1 | {companyinfo['company']} - {companyinfo['city']}"
                               f" ({companyinfo['prov']})")
 
-        Style('labor')
+        Style('darkly')
 
-        self.mainwindow.state("zoomed")
+        self.mainwindow.state("normal")
 
         self.mainwindow.protocol("WM_DELETE_WINDOW", self.on_close)
 
